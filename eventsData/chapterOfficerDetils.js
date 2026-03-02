@@ -12,7 +12,7 @@ export const chapterOfficers = [
     {
         name: 'Varsha M',
         role: 'Membership Chair',
-        image: '/coreTeam/Varsha.jpg',
+        image: '/user.jpg',
     },
     {
         name: 'Shubham Khatri',
