@@ -15,7 +15,7 @@ const MemberCard = ({ member, isFaculty = false } : any) => {
                     />
                 </div>
                 <div className="mt-4 text-center">
-                    <h3 className="text-lg font-semibold hover:scale-125 transition duration-600 p-2">{member.name}</h3>
+                    <h3 className="text-xl font-semibold hover:scale-125 transition duration-600 p-2 text-yellow-500">{member.name}</h3>
                     <p className="text-gray-600">{member.role}</p>
                 </div>
             </div>

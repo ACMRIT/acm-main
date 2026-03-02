@@ -1,38 +1,52 @@
 export const chapterOfficers = [
     {
-        name: 'Harshitha J S',
+        name: 'Swanand Gadwe',
         role: 'Chair',
-        image: '/coreTeam/harshitha.jpg',
+        image: '/coreTeam/Swanand_Gadwe.jpg',
     },
     {
-        name: 'Ankit Raj',
+        name: 'Mayeraa Singh',
         role: 'Vice Chair',
-        image: '/coreTeam/ankith.jpg',
+        image: '/coreTeam/Mayeraa.jpg',
     },
     {
-        name: 'Harshvardhan Mehta',
+        name: 'Varsha M',
+        role: 'Membership Chair',
+        image: '/coreTeam/Varsha.jpg',
+    },
+    {
+        name: 'Shubham Khatri',
+        role: 'Membership Chair',
+        image: '/coreTeam/Shubham Khatri.jpg',
+    },
+    {
+        name: 'Shrihari Joshi',
         role: 'Treasurer',
-        image: '/coreTeam/harshvardhan.jpg',
+        image: '/coreTeam/ShrihariJoshi.jpeg',
     },
     {
-        name: 'Jamuna S Murthy',
+        name: 'Kushal L',
+        role: 'Treasurer',
+        image: '/coreTeam/Kushal.jpg',
+    },
+    {
+        name: 'Saksham Yadav',
         role: 'Secretary',
-        image: '/coreTeam/jamuna.jpg',
+        image: '/coreTeam/Saksham.jpeg',
     },
     {
-        name: 'A Deepthi',
+        name: 'Sneha Debnath',
+        role: 'Secretary',
+        image: '/coreTeam/Sneha Debnath.jpg',
+    },
+    {
+        name: 'Samrudh P',
         role: 'Web Master',
-        image: '/coreTeam/deepthi.jpg',
+        image: '/coreTeam/Samrudh .jpg',
     },
     {
-        name: 'Pawan Moodambail',
-        role: 'Memership Chair',
-        image: '/coreTeam/pawan.jpg',
-    },
-    {
-        name : 'Aditi Mahajan',
-        role : 'Social Media Head',
-        image : '/coreTeam/adithi.jpg'
+        name: 'Sagar S R',
+        role: 'Web Master',
+        image: '/coreTeam/sagar.png',
     }
-    
 ]

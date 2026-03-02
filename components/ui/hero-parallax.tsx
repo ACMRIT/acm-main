@@ -1,13 +1,7 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import {
-    motion,
-    useScroll,
-    useTransform,
-    useSpring,
-    MotionValue,
-} from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 export const HeroParallax = ({
@@ -18,84 +12,83 @@ export const HeroParallax = ({
         thumbnail: string;
     }[];
 }) => {
-    const firstRow = products.slice(0, 5);
-    const secondRow = products.slice(5, 10);
-    const thirdRow = products.slice(10, 15);
-    const ref = React.useRef(null);
-    const { scrollYProgress } = useScroll({
-        target: ref,
-        offset: ["start start", "end start"],
-    });
+    const [current, setCurrent] = useState(0);
+    const [prev, setPrev] = useState<number | null>(null);
 
-    const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
-
-    const translateX = useSpring(
-        useTransform(scrollYProgress, [0, 1], [0, 1000]),
-        springConfig
-    );
-    const translateXReverse = useSpring(
-        useTransform(scrollYProgress, [0, 1], [0, -1000]),
-        springConfig
-    );
-    const rotateX = useSpring(
-        useTransform(scrollYProgress, [0, 0.2], [15, 0]),
-        springConfig
-    );
-    const opacity = useSpring(
-        useTransform(scrollYProgress, [0, 0.2], [0.2, 1]),
-        springConfig
-    );
-    const rotateZ = useSpring(
-        useTransform(scrollYProgress, [0, 0.2], [20, 0]),
-        springConfig
-    );
-    const translateY = useSpring(
-        useTransform(scrollYProgress, [0, 0.2, 1], [-700, 100, 100]),
-        springConfig
-    );
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setPrev(current);
+            setCurrent((c) => (c + 1) % products.length);
+        }, 5000);
+        return () => clearInterval(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [current, products.length]);
 
     return (
-        <div
-            ref={ref}
-            className="h-[165vh] pt-20 sm:h-[250vh] bg-gradient-to-b from-white to-gray-400 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
-        >
-            <Header />
+        <div className="relative w-full h-screen overflow-hidden bg-black">
+
+            {/* Previous image — fades out */}
+            <AnimatePresence>
+                {prev !== null && (
+                    <motion.div
+                        key={`prev-${prev}`}
+                        initial={{ opacity: 1 }}
+                        animate={{ opacity: 0 }}
+                        transition={{ duration: 1.5, ease: "easeInOut" }}
+                        className="absolute inset-0 z-0"
+                    >
+                        <Image
+                            src={products[prev].thumbnail}
+                            alt="hero-prev"
+                            fill
+                            className="object-cover"
+                        />
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
+            {/* Current image — fades in with Ken Burns zoom */}
             <motion.div
-                style={{
-                    rotateX,
-                    rotateZ,
-                    translateY,
-                    opacity,
+                key={`curr-${current}`}
+                initial={{ opacity: 0, scale: 1.0 }}
+                animate={{ opacity: 1, scale: 1.08 }}
+                transition={{
+                    opacity: { duration: 1.5, ease: "easeInOut" },
+                    scale: { duration: 6, ease: "linear" },
                 }}
+                className="absolute inset-0 z-10"
             >
-                <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
-                    {firstRow.map((product) => (
-                        <ProductCard
-                            product={product}
-                            translate={translateX}
-                            key={product.id}
-                        />
-                    ))}
-                </motion.div>
-                <motion.div className="flex flex-row mb-20 space-x-20">
-                    {secondRow.map((product) => (
-                        <ProductCard
-                            product={product}
-                            translate={translateXReverse}
-                            key={product.id}
-                        />
-                    ))}
-                </motion.div>
-                <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
-                    {thirdRow.map((product) => (
-                        <ProductCard
-                            product={product}
-                            translate={translateX}
-                            key={product.id}
-                        />
-                    ))}
-                </motion.div>
+                <Image
+                    src={products[current].thumbnail}
+                    alt="hero"
+                    fill
+                    className="object-cover"
+                    priority
+                />
             </motion.div>
+
+            {/* Dark gradient overlay */}
+            <div className="absolute inset-0 z-20 bg-gradient-to-b from-black/65 via-black/25 to-black/75" />
+
+            {/* Text content */}
+            <div className="absolute inset-0 z-30 flex items-center px-8 sm:px-16 md:px-24">
+                <Header />
+            </div>
+
+            {/* Dot / pill indicators */}
+            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-2 items-center">
+                {products.map((_, i) => (
+                    <button
+                        key={i}
+                        onClick={() => { setPrev(current); setCurrent(i); }}
+                        className={`rounded-full transition-all duration-500 ${
+                            i === current
+                                ? "bg-white w-6 h-2"
+                                : "bg-white/40 w-2 h-2 hover:bg-white/70"
+                        }`}
+                    />
+                ))}
+            </div>
         </div>
     );
 };
@@ -120,55 +113,26 @@ export const Header = () => {
     });
 
     return (
-        <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
-            <h1 className="text-3xl sm:text-3xl md:text-7xl font-bold dark:text-white">
+        <div className="max-w-7xl w-full">
+            <motion.h1
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                className="text-4xl sm:text-5xl md:text-7xl font-bold text-white"
+            >
                 Here at
-                <span className="text-red-600 font-extrabold text-3xl sm:text-3xl md:text-7xl font-titillium leading-[1.2]">
-                    {" "} RIT
-                </span>{" "}
-                <span className="text-lightBlue300 font-extrabold text-3xl sm:text-3xl md:text-7xl font-titillium leading-[1.2]">
-                    ACM
-                </span>
-            </h1>
-            <p className="max-w-2xl text-3xl sm:text-3xl md:text-6xl mt-8 dark:text-neutral-200 font-titillium font-semibold">
-                <span className='text-deepBlue' >{text}</span>
+                <span className="text-red-500 font-extrabold font-titillium"> RIT</span>{" "}
+                <span className="text-blue-400 font-extrabold font-titillium">ACM</span>
+            </motion.h1>
+            <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
+                className="max-w-2xl text-2xl sm:text-3xl md:text-5xl mt-6 font-titillium font-semibold text-white/90"
+            >
+                {text}
                 <Cursor cursorStyle="|" />
-            </p>
+            </motion.p>
         </div>
-    );
-};
-
-export const ProductCard = ({
-    product,
-    translate,
-}: {
-    product: {
-        id:number,
-        thumbnail: string;
-    };
-    translate: MotionValue<number>;
-}) => {
-    return (
-        <motion.div
-            style={{
-                x: translate,
-            }}
-            whileHover={{
-                y: -20,
-            }}
-            key={product.id}
-            className="group/product h-96 w-[30rem] relative flex-shrink-0"
-        >
-            <div className="block group-hover/product:shadow-2xl">
-                <Image
-                    src={product.thumbnail}
-                    height="600"
-                    width="600"
-                    className="object-cover object-left-top absolute h-full w-full inset-0"
-                    alt={"event"}
-                />
-            </div>
-            <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-10 bg-black pointer-events-none"></div>
-        </motion.div>
     );
 };

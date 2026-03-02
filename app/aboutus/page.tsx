@@ -4,10 +4,9 @@ import Ourmission from "@/components/Ourmission";
 import Activities from "@/components/Activities";
 import Intro from '@/components/Intro';
 
-
 const aboutus = () => {
   return (
-    <div className='bg-gradient-to-b pt-28 from-deepBlueHead to-white'>
+    <div className='bg-gradient-to-b pt-28 from-deepBlueHead via-[#02042a] to-black'>
       <Intro/>
       <Ourjourney/>
       <Ourmission/>
