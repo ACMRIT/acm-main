@@ -1,0 +1,15 @@
+import { ReactNode } from 'react';
+
+interface DashboardLayoutProps {
+  children: ReactNode;
+}
+
+export default function DashboardLayout({ children }: DashboardLayoutProps) {
+  return (
+    <div className="flex min-h-screen bg-gray-100">
+      <main className="flex-1 p-8">
+        {children}
+      </main>
+    </div>
+  );
+}
