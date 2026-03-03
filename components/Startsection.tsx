@@ -8,48 +8,22 @@ export function Startsection() {
 export const products = [
   {
     id: 1,
-    thumbnail:
-      "/generalImages/coverPic3.jpg",
+    thumbnail: "/generalImages/image.png",
   },
   {
     id: 2,
-    thumbnail:
-      "/generalImages/coverPic2.jpg",
+    thumbnail: "/generalImages/image copy.png",
   },
   {
     id: 3,
-    thumbnail:
-      "/generalImages/coverPic1.jpg",
+    thumbnail: "/generalImages/image copy 2.png",
   },
-
   {
     id: 4,
-    thumbnail:
-      "/generalImages/coverPic4.jpg",
+    thumbnail: "/generalImages/coverPic4.jpg",
   },
   {
     id: 5,
-    thumbnail:
-      "/generalImages/coverPic5.jpg",
-  },
-  {
-    id: 6,
-    thumbnail:
-      "/generalImages/coverPic6.jpg",
-  },
-  {
-    id: 7,
-    thumbnail:
-      "/generalImages/coverPic7.jpg",
-  },
-  {
-    id: 8,
-    thumbnail:
-      "/generalImages/coverPic8.jpg",
-  },
-  {
-    id: 9,
-    thumbnail:
-      "/generalImages/coverPic9.jpg",
+    thumbnail: "/generalImages/coverPic8.jpg",
   },
 ];
