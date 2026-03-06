@@ -1,0 +1,22 @@
+'use client';
+
+import { usePathname } from 'next/navigation';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import Ubutton from '@/components/Ubutton';
+
+export default function ShellWrapper({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+  const isAdmin = pathname?.startsWith('/admin');
+
+  if (isAdmin) return <>{children}</>;
+
+  return (
+    <>
+      <Navbar />
+      {children}
+      <Footer />
+      <Ubutton />
+    </>
+  );
+}

@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 import { Titillium_Web } from "next/font/google";
-import Footer from "@/components/Footer";
-import Ubutton from "@/components/Ubutton";
+import ShellWrapper from "@/components/ShellWrapper";
 
 const titillium = Titillium_Web({
   weight: ["400", "700"],
@@ -40,10 +38,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={titillium.className}>
-        <Navbar />
-        {children}
-        <Footer />
-        <Ubutton />
+        <ShellWrapper>
+          {children}
+        </ShellWrapper>
       </body>
     </html>
   );
