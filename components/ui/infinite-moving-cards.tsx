@@ -109,10 +109,10 @@ export const InfiniteMovingCards = ({
                 </span>
               </div>
             </blockquote>
-            <div className="mt-4 flex gap-2">
+            <div className="mt-4 flex gap-2 z-50 relative">
               {buttons.map((button, buttonIdx) => (
                 <Link key={buttonIdx} href={button.href}>
-                  <button className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+                  <button className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 relative z-50">
                     {button.label}
                   </button>
                 </Link>

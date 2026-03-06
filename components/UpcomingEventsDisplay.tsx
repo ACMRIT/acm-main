@@ -1,194 +1,91 @@
 "use client"
-// import Link from 'next/link';
 import React from 'react';
-// import Image from 'next/image';
-// import { useState } from 'react';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { Calendar, MapPin, Trophy, Users, Code, ExternalLink } from 'lucide-react';
 
 const UpcomingDesc = () => {
-    // const [showRules, setShowRules] = useState(false);
     return (
-        <div id="upcoming" className="w-full h-full mt-5">
-            <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+        <div id="upcoming" className="w-full mt-5 py-10">
+            <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-200 font-sans mb-4">
                 Upcoming Events
             </h2>
-            <hr className="border-gray-600 border-t-4 my-4" />
-            {/* <div id='javathon' className="min-h-screen flex flex-col max-w-fit border-black shadow-lg p-6">
-                <div className='p-5'>
-                    <div className="max-w-3xl w-full rounded-lg p-6 mb-3">
-                        <h1 className="text-4xl font-bold text-blue-600 mb-4">HACKVENTURE 1.0</h1>
-                        <p className="text-lg text-gray-700">
-                            Join us for an exciting event that brings together Java enthusiasts !
-                        </p>
-                    </div>
-                    <div className="max-w-2xl w-full rounded-lg p-6">
-                        <h2 className="text-2xl font-semibold text-gray-800 mb-3">Event Details</h2>
-                        <ul className="list-disc list-inside text-gray-700 space-y-2 pl-4">
-                            <li><strong>Date :</strong>20th - 27th December 2024</li>
-                            <li><strong>Location : </strong> Ramaiah Institute of Technology RIT campus.</li>
-                            <li><strong>Duration : </strong> 1 Days of Non-Stop Coding & Innovation!</li>
-                            <li><strong>Eligibility :</strong> Open to all students  </li>
-                        </ul>
-                    </div>
-                    <div className="max-w-3xl w-full rounded-lg p-6">
-                        <h2 className="text-2xl font-semibold text-gray-800 mb-4">About HackVenture 2025</h2>
-                        <p className="text-gray-700">
-                            1. Team size: 2-4 members.  <br />
-                            2. 20th Dec: 1st round (Online).<br />
-                            3. 22nd Dec: Result announcement of 1st round.<br />
-                            4. 27th Dec: 2nd round (Offline).<br />
-                            5. 2nd round Location: Des Hi-Tech Seminar Hall-1.<br />
-                        </p>
-                        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Note</h2>
-                        <p className="text-gray-700">
-                            
-                            • 1st round will be only idea presentation with PPT (compulsory).<br />
-                            • 2nd round is offline and every team member is required to be
-                            present (conditions apply) along with GitHub code.<br />
-                            • Video (optional) for 1st round to be uploaded on YouTube and
-                            made public (Unlisted) and that same link should be provided in
-                            the form.<br />
-                            • Code is required only for 2nd round and has no impact on 1st
-                            round.<br />
+            <hr className="border-gray-600 border-t my-4" />
 
-                            <Link href={"https://docs.google.com/presentation/d/1CFR3OnVZY8HTc4euBVtL5txMrZZbB1do/edit?pli=1#slide=id.p1"} className='mt-2 text-blue-600 hover:text-red-500' >
-                              ppt : Link
-                            </Link>
+            {/* CodeGolf 2.0 Card */}
+            <div className="max-w-7xl mx-auto px-4 mt-8">
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="relative rounded-2xl border border-blue-500/30 bg-gradient-to-br from-blue-950/60 via-[#02042a] to-black overflow-hidden"
+                >
+                    {/* Top accent bar */}
+                    <div className="h-1 w-full bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500" />
 
-                            </p>
-                            
-                    </div>
-                    <div className="max-w-3xl w-full flex justify-center mt-8">
-                        <Link href="https://form.jotform.com/243444897423465">
-                        <button className="bg-blue-600 text-white py-3 px-8 rounded-full font-semibold hover:bg-blue-700 transition duration-200">
-                            Register Now
-                        </button>
-                        
-                        </Link>
-                       
-                    </div>
-                </div>
-            </div> */}
-            {/* <div id="codegolf" className="min-h-screen flex flex-col items-center px-4 py-6">
-                <div className="w-full max-w-4xl bg-gray-50 shadow-lg rounded-2xl p-6 sm:p-10">
-                    
-                    <h1 className="text-4xl md:text-5xl font-bold text-blue-700 text-center mb-6">
-                        Code Golf - When Less is More
-                    </h1>
-
-                   
-                    <div className="w-full max-w-md md:max-w-2xl mb-8">
-                        <Image
-                            src="/eventsImages/codegolf/flyer.jpg"
-                            alt="Code Golf Flyer"
-                            width={1200}
-                            height={1600}
-                            className="rounded-lg shadow-md w-full h-auto"
-                            priority
-                        />
-                    </div>
-
-                   
-                    <div className="max-w-2xl w-full rounded-lg p-6 bg-white shadow mb-4">
-                        <h2 className="text-2xl font-semibold text-gray-800 mb-3">Event Details</h2>
-                        <ul className="list-disc list-inside text-gray-700 space-y-2 pl-4">
-                            <li><strong>Date:</strong> 9th May 2025</li>
-                            <li><strong>Timings:</strong> 12 PM to 4 PM</li>
-                            <li><strong>Location:</strong> MS Ramaiah Institute of Technology, ESB Seminar Hall 1</li>
-                            <li><strong>Prize Pool:</strong> ₹15,000</li>
-                            <li><strong>Team Size:</strong> 2 or 3 members</li>
-                            <li><strong>Last Date to Register:</strong> 8th May 2025</li>
-                        </ul>
-                    </div>
-
-               
-                    <div className="max-w-2xl w-full rounded-lg p-6 bg-white shadow mb-4">
-                        <h2 className="text-2xl font-semibold text-gray-800 mb-3">Registration Fees</h2>
-                        <ul className="list-disc list-inside text-gray-700 space-y-2 pl-4">
-                            <li><strong>Team with ACM Members only:</strong> ₹50</li>
-                            <li><strong>Team with One or More Non-ACM Members:</strong> ₹100</li>
-                        </ul>
-                    </div>
-
-                
-                    <div className="max-w-2xl w-full rounded-lg p-6 bg-white shadow mb-4">
-                        <h2 className="text-2xl font-semibold text-gray-800 mb-3">Payment Details</h2>
-                        <ul className="list-disc list-inside text-gray-700 space-y-2 pl-4">
-                            <li><strong>Payment UPI ID:</strong> 8539900733@ptsbi</li>
-                            <li><strong>Phone Number:</strong> +91 85399 00733</li>
-                        </ul>
-                    </div>
-                    
-                    <div className="max-w-2xl w-full rounded-lg p-6 bg-white shadow mb-4">
-                        <h2 className="text-2xl font-semibold text-gray-800 mb-3">Hosting Platform</h2>
-                        <p className="text-gray-700 text-base">
-                            This event will be conducted on <strong>HackerRank</strong>. Participants must have an active HackerRank account to compete.
-                            Details regarding the platform access and problem links will be shared prior to the event.
-                        </p>
-                    </div>
-
-                    <div className="max-w-2xl w-full rounded-lg p-6 bg-gray-100 shadow mb-6">
-                        <h2
-                            className="text-2xl font-semibold text-gray-800 mb-3 cursor-pointer"
-                            onClick={() => setShowRules(!showRules)}
-                        >
-                            {showRules ? '🔽 Hide Rules' : '▶️ Show Full Rules & Format'}
-                        </h2>
-
-                        {showRules && (
-                            <div className="text-gray-700 space-y-3 text-sm sm:text-base">
-                                <ul className="list-disc list-inside space-y-2 pl-4">
-                                    <li><strong>Event Format:</strong> Two rounds. Solve problems using the fewest characters possible.</li>
-                                    <li><strong>Languages Allowed:</strong> Java, C, CPP, Python</li>
-                                    <li><strong>Scoring:</strong> Fewer characters = more points. Ties broken by correctness & submission time.</li>
-                                    <li><strong>Rules:</strong>
-                                        <ul className="list-disc pl-6 mt-1">
-                                            <li>Use only standard input/output</li>
-                                            <li>No external libraries</li>
-                                            <li>Self-contained, runnable code only</li>
-                                            <li>No compilation tricks allowed</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Strictly Enforced:</strong>
-                                        <ul className="list-disc pl-6 mt-1">
-                                            <li>No ChatGPT or AI tools</li>
-                                            <li>No online compilers or search engines</li>
-                                            <li>No collaboration or code copying</li>
-                                            <li>No mobile devices for coding/reference</li>
-                                            <li>One login per team for code submission</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Round Format:</strong>
-                                        <ul className="list-disc pl-6 mt-1">
-                                            <li>Round 1: Warm-up problems (Practice)</li>
-                                            <li>Round 2: Final problems (Scored)</li>
-                                            <li>Use your own system for both rounds</li>
-                                            <li>Submit code via designated platform</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Violation:</strong> Any rule break = Disqualification</li>
-                                </ul>
+                    <div className="p-8 md:p-10">
+                        {/* Header row */}
+                        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                            <div>
+                                <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 text-xs font-semibold mb-3">
+                                    <Code className="w-3 h-3" /> Competitive Programming
+                                </span>
+                                <h3 className="text-3xl md:text-4xl font-extrabold text-white font-titillium">
+                                    Code<span className="text-cyan-400">Golf</span> 2.0
+                                </h3>
+                                <p className="text-white/60 mt-1 text-sm">Think smarter. Code shorter. Win faster.</p>
                             </div>
-                        )}
-                    </div>
-                    <div className="max-w-2xl w-full flex justify-center">
-                        <Link target='__blank' href="https://forms.gle/kxfcYZGhesR4x7F67">
-                            <button className="bg-blue-600 text-white py-3 px-6 rounded-full font-semibold hover:bg-blue-700 transition duration-200">
-                                Register Now
-                            </button>
-                        </Link>
-                    </div>
-                </div>
-            </div> */}
+                            <Link href="https://code-golf2-0.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                <motion.button
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.97 }}
+                                    className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-bold rounded-xl shadow-lg shadow-blue-500/30 hover:shadow-cyan-500/40 transition-all duration-300 whitespace-nowrap"
+                                >
+                                    Register Now <ExternalLink className="w-4 h-4" />
+                                </motion.button>
+                            </Link>
+                        </div>
 
-            <div className="w-full h-full mt-16 text-center ">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-                    We&apos;ll Catch You Guys Soon 😉
-                </h2>
-                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 mt-4">
-                    Stay tuned for more exciting events coming your way!
-                </p>
+                        {/* Info chips */}
+                        <div className="flex flex-wrap gap-4 mb-8">
+                            <div className="flex items-center gap-2 text-white/70 text-sm">
+                                <Calendar className="w-4 h-4 text-cyan-400" />
+                                March 12, 2026 · Full Day
+                            </div>
+                            <div className="flex items-center gap-2 text-white/70 text-sm">
+                                <MapPin className="w-4 h-4 text-cyan-400" />
+                                ESB Seminar Hall 1, MSRIT
+                            </div>
+                            <div className="flex items-center gap-2 text-white/70 text-sm">
+                                <Users className="w-4 h-4 text-cyan-400" />
+                                Individual + Team · All students eligible
+                            </div>
+                        </div>
+
+                        {/* Description */}
+                        <p className="text-white/60 mb-8 leading-relaxed max-w-3xl">
+                            CodeGolf 2.0 is a competitive programming event where you solve algorithmic challenges using the most concise code possible. Two rounds — an Individual DSA round on HackerRank followed by a mystery Surprise Round. Fewer characters = higher rank.
+                        </p>
+
+                        {/* Stats row */}
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            {[
+                                { label: 'Prize Pool', value: '₹6,000', icon: Trophy, color: 'from-yellow-500/20 to-orange-500/10 border-yellow-500/30 text-yellow-300' },
+                                { label: 'Rounds', value: '2', icon: Code, color: 'from-blue-500/20 to-cyan-500/10 border-blue-500/30 text-blue-300' },
+                                { label: 'Problems', value: '6', icon: Code, color: 'from-purple-500/20 to-pink-500/10 border-purple-500/30 text-purple-300' },
+                                { label: '1st Prize', value: '₹3,000', icon: Trophy, color: 'from-cyan-500/20 to-blue-500/10 border-cyan-500/30 text-cyan-300' },
+                            ].map(({ label, value, icon: Icon, color }) => (
+                                <div key={label} className={`rounded-xl border bg-gradient-to-br ${color} p-4 text-center`}>
+                                    <Icon className="w-5 h-5 mx-auto mb-1 opacity-70" />
+                                    <div className="text-xl font-extrabold">{value}</div>
+                                    <div className="text-xs text-white/50 mt-0.5">{label}</div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </motion.div>
             </div>
-
         </div>
     );
 };

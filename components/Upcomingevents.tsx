@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function Upcomingevents() {
   return (
-    <div id="upm" className="relative mt-0 py-16 flex flex-col antialiased bg-gradient-to-b from-black to-[#02042a] items-center justify-center overflow-hidden">
+    <div id="upm" className="relative z-50 mt-0 py-16 flex flex-col antialiased bg-gradient-to-b from-black to-[#02042a] items-center justify-center overflow-hidden">
       {/* top edge glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-px bg-gradient-to-r from-transparent via-blue-500/40 to-transparent" />
 
