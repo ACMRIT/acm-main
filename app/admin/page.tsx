@@ -289,14 +289,13 @@ export default function UpdateMembersPage() {
         ) : members.length === 0 ? (
           <div className="text-center py-32 text-gray-400">No members yet. Click <strong>+ Add Member</strong> to add the first one!</div>
         ) : (
-          <div className="bg-white rounded-2xl shadow border border-gray-200 overflow-hidden">
-            <table className="w-full text-sm">
+          <div className="bg-white rounded-2xl shadow border border-gray-200 overflow-x-auto">
+            <table className="w-full text-sm min-w-[500px]">
               <thead>
                 <tr className="bg-gray-50 border-b border-gray-200 text-gray-500 text-xs uppercase tracking-wider">
                   <th className="px-5 py-4 text-left">Member ID</th>
                   <th className="px-5 py-4 text-left">Name</th>
                   <th className="px-5 py-4 text-left">Email</th>
-                  <th className="px-5 py-4 text-left">Joined</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100">
@@ -306,14 +305,7 @@ export default function UpdateMembersPage() {
                     <td className="px-5 py-4 text-gray-800 font-medium">
                       {m.first_name} {m.last_name}
                     </td>
-                    <td className="px-5 py-4 text-gray-600">{m.email}</td>
-                    <td className="px-5 py-4 text-gray-400">
-                      {new Date(m.createdAt).toLocaleDateString('en-IN', {
-                        day: '2-digit',
-                        month: 'short',
-                        year: 'numeric',
-                      })}
-                    </td>
+                    <td className="px-5 py-4 text-gray-600 break-all">{m.email}</td>
                   </tr>
                 ))}
               </tbody>
