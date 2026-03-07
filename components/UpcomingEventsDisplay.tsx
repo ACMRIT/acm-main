@@ -59,7 +59,7 @@ const UpcomingDesc = () => {
                             </div>
                             <div className="flex items-center gap-2 text-white/70 text-sm">
                                 <Users className="w-4 h-4 text-cyan-400" />
-                                Individual + Team · All students eligible
+                                Pair programming · All students eligible
                             </div>
                         </div>
 
@@ -71,10 +71,10 @@ const UpcomingDesc = () => {
                         {/* Stats row */}
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                             {[
-                                { label: 'Prize Pool', value: '₹6,000', icon: Trophy, color: 'from-yellow-500/20 to-orange-500/10 border-yellow-500/30 text-yellow-300' },
+                                { label: 'Prize Pool', value: '₹10,000', icon: Trophy, color: 'from-yellow-500/20 to-orange-500/10 border-yellow-500/30 text-yellow-300' },
                                 { label: 'Rounds', value: '2', icon: Code, color: 'from-blue-500/20 to-cyan-500/10 border-blue-500/30 text-blue-300' },
                                 { label: 'Problems', value: '6', icon: Code, color: 'from-purple-500/20 to-pink-500/10 border-purple-500/30 text-purple-300' },
-                                { label: '1st Prize', value: '₹3,000', icon: Trophy, color: 'from-cyan-500/20 to-blue-500/10 border-cyan-500/30 text-cyan-300' },
+                                { label: '1st Prize', value: '₹5,000', icon: Trophy, color: 'from-cyan-500/20 to-blue-500/10 border-cyan-500/30 text-cyan-300' },
                             ].map(({ label, value, icon: Icon, color }) => (
                                 <div key={label} className={`rounded-xl border bg-gradient-to-br ${color} p-4 text-center`}>
                                     <Icon className="w-5 h-5 mx-auto mb-1 opacity-70" />
