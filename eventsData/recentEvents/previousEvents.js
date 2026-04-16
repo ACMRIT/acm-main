@@ -127,7 +127,7 @@ const eventData = [
   },
   {
     id: 7,
-    title: "CODE GOLF 2025",
+    title: "CodeGolf 2025",
     img: "/eventsImages/codeGolf/code1.jpg",
     description: "A fast-paced DSA coding contest hosted on HackerRank, emphasizing shortest code solutions and efficiency.",
     faculty: {
@@ -135,7 +135,7 @@ const eventData = [
       about: "Assistant Professor, Department of CSE and Faculty Coordinator of ACM-RIT. Delivered the welcome address and played a key role in organizing the event."
     },
     details: {
-      desc: "CODEGOLF 2025 wasn’t your average coding competition - it was a pure battle of brains and brevity. Hosted by the ACM Student Chapter at RIT on May 9th, 2025, this offline showdown brought together over 70+ elite teams from multiple colleges, including RVCE and IISc. The twist? You had to solve tough DSA problems with the shortest possible code. Think HackerRank. Think sweat. Think obsession with shaving off \"every single character\".\n\nThe event was split into two brutal rounds. Round 1 hit with a mix of easy and medium-level problems. Then Round 2 turned up the heat — with hard-core DSA challenges that required both logic and code-golf strategy. Points were deducted for every extra character, making every semicolon count.\n\n🔥 Highlights:\n- Hosted on HackerRank using C, C++, Java, or Python\n- Strict rules: No AI tools, no online compilers, no copying — raw skill only\n- 20 AICTE activity points were awarded to all participants\n\n🥇 Winners:\n- 1st Place: \"TrieFecta\" — consistent leaderboard kings, took home ₹7,000\n- 2nd Place: \"Team MisFits\" — creative coders who sliced through edge cases — ₹5,000\n- 3rd Place: \"bhatakta Vaibhav\" — clean, efficient, and surgical with code — ₹3,000\n\n🧠 Bonus fun: A riddle break kept the vibes alive while judges calculated scores.\n\nJudges praised the participants’ grit and left them with golden advice: Focus on fundamentals, test edge cases like a maniac, and write code that's not just short — but smart. The event ended with certificates, photo sessions, and a whole lot of respect for clean code and competitive hustle.\n\nIn the end, CodeGolf 2025 proved this: It's not about writing 'more' code, it's about writing the 'right' code — with less.",
+      desc: "CodeGolf 2025 wasn’t your average coding competition - it was a pure battle of brains and brevity. Hosted by the ACM Student Chapter at RIT on May 9th, 2025, this offline showdown brought together over 70+ elite teams from multiple colleges, including RVCE and IISc. The twist? You had to solve tough DSA problems with the shortest possible code. Think HackerRank. Think sweat. Think obsession with shaving off \"every single character\".\n\nThe event was split into two brutal rounds. Round 1 hit with a mix of easy and medium-level problems. Then Round 2 turned up the heat — with hard-core DSA challenges that required both logic and code-golf strategy. Points were deducted for every extra character, making every semicolon count.\n\n🔥 Highlights:\n- Hosted on HackerRank using C, C++, Java, or Python\n- Strict rules: No AI tools, no online compilers, no copying — raw skill only\n- 20 AICTE activity points were awarded to all participants\n\n🥇 Winners:\n- 1st Place: \"TrieFecta\" — consistent leaderboard kings, took home ₹7,000\n- 2nd Place: \"Team MisFits\" — creative coders who sliced through edge cases — ₹5,000\n- 3rd Place: \"bhatakta Vaibhav\" — clean, efficient, and surgical with code — ₹3,000\n\n🧠 Bonus fun: A riddle break kept the vibes alive while judges calculated scores.\n\nJudges praised the participants’ grit and left them with golden advice: Focus on fundamentals, test edge cases like a maniac, and write code that's not just short — but smart. The event ended with certificates, photo sessions, and a whole lot of respect for clean code and competitive hustle.\n\nIn the end, CodeGolf 2025 proved this: It's not about writing 'more' code, it's about writing the 'right' code — with less.",
       img20: "/eventsImages/codegolf/code20.jpg",
       img13: "/eventsImages/codegolf/code13.jpg",
       img6: "/eventsImages/codegolf/code6.jpg",
@@ -159,6 +159,31 @@ const eventData = [
       img18: "/eventsImages/codegolf/code18.jpg",
       img22: "/eventsImages/codegolf/code22.jpg",
       img24: "/eventsImages/codegolf/code24.jpg",
+    }
+  },
+  {
+    id: 8,
+    title: "CodeGolf 2.0",
+    img: "/eventsImages/codegolf2.0/codegolf1.jpg",
+    description: "Think smarter. Code shorter. Win faster.",
+    faculty: {
+      name: "Jamuna S Murthy",
+      about: "Assistant Professor, Department of CSE and Faculty Coordinator of ACM-RIT"
+    },
+    details: {
+      desc: "CODEGOLF 2.0, hosted by the ACM Official Student Chapter at Ramaiah Institute of Technology on March 12, 2026, was a Data Structures and Algorithms (DSA) coding competition that challenged participants' problem-solving abilities, coding skills, and efficiency in a competitive environment.\n\nEvent Format: The objective of the event was to write the shortest possible codes for the given problems. The contest was hosted on the HackerRank platform, allowing participants to use one of five languages: C, C++, Go, Python, or Java. Driver code for each language was provided in advance. Each round lasted 2 hours with a minimum character threshold for maximum points. Every character used in excess resulted in a 0.05-point deduction.\n\nRounds:\nRound 1 (Easy-Intermediate): 2 easy, 3 medium, and 1 hard level questions with a total of 2 hours duration.\nRound 2 (Hard): Top 75 teams advanced to face 4 medium and 2 hard-level questions, with increased difficulty and separated team members for each 30-minute laptop rotation.\n\n📊 Event Statistics:\n- 140 teams registered (280+ participants)\n- Registration period: March 7-12, 2026\n- Venue: Ramaiah Institute of Technology\n- Time: 10:00 AM - 4:30 PM\n- Participants from multiple departments including CSE, Electrical, Telecommunication, and others\n\n🥇 Winners:\nFirst Place (₹5,000): \"TLE is what she said\" - Rishi Dargad and Adithya Vikram\nSecond Place (₹3,000): \"Delusions\" - Sreeya and Aniksha\nThird Place (₹2,000): \"Melodi\" - Mishka Tiwari and Kamal Karteek\n\n✨ Key Highlights:\n- Competitive DSA problem-solving with character count optimization\n- Strict rules: No AI tools, online compilers, or code copying\n- Fair play enforcement with disqualification for violations\n- 20 AICTE activity points awarded to all participants\n- Certificates distributed to all winners and participants\n- Interactive sessions with rules explanation and feedback incorporation\n- Strong positive feedback on problem difficulty and competitive environment\n\nThe event witnessed remarkable enthusiasm, with participants praising the interesting problem sets, collaborative atmosphere, and supportive ACM organization. The feedback highlighted the need for improved WiFi connectivity and clearer problem statements for future iterations. Overall, CODEGOLF 2.0 proved to be a successful celebration of innovation, teamwork, and the pursuit of coding excellence.",
+      img1: '/eventsImages/codegolf2.0/codegolf1.jpg',
+      img2: '/eventsImages/codegolf2.0/codegolf2.jpg',
+      img3: '/eventsImages/codegolf2.0/codegolf8.jpg',
+      img4: '/eventsImages/codegolf2.0/codegolf4.jpg',
+      img5: '/eventsImages/codegolf2.0/codegolf3.jpg',
+      img6: '/eventsImages/codegolf2.0/codegolf5.jpg',
+      img7: '/eventsImages/codegolf2.0/codegolf7.jpg',
+      img8: '/eventsImages/codegolf2.0/codegolf9.jpg',
+      img9: '/eventsImages/codegolf2.0/codegolf10.jpg',
+      img10: '/eventsImages/codegolf2.0/codegolf11.jpg',
+      img11: '/eventsImages/codegolf2.0/codegolf12.jpg',
+      img12: '/eventsImages/codegolf2.0/codegolf13.jpg',
     }
   }
   

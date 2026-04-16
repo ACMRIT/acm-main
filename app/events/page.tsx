@@ -1,8 +1,7 @@
 'use client'
 import React from 'react'
 import {EventsDisplay}  from '@/components/PrevEventsDisplay';
-import UpcomingDesc from '@/components/UpcomingEventsDisplay'; 
-
+// import UpcomingDesc from '@/components/UpcomingEventsDisplay'; 
 export default function Events() {
     return (
         <div className="container mx-auto px-4 py-8 pt-40">
@@ -14,7 +13,7 @@ export default function Events() {
                 </p>
             </div>
             <EventsDisplay/>
-            <UpcomingDesc/>
+            {/* <UpcomingDesc/> */}
         </div>
     )
 }
