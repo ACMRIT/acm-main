@@ -10,14 +10,9 @@ export const chapterOfficers = [
         image: '/coreTeam/Mayeraa.jpg',
     },
     {
-        name: 'Varsha M',
+        name: 'Ranjita V Nayak',
         role: 'Membership Chair',
-        image: '/coreTeam/Varsha_M.jpg',
-    },
-    {
-        name: 'Shubham Khatri',
-        role: 'Membership Chair',
-        image: '/coreTeam/Shubham Khatri.jpg',
+        image: '/coreTeam/Ranjita.png',
     },
     {
         name: 'Shrihari Joshi',
@@ -25,19 +20,9 @@ export const chapterOfficers = [
         image: '/coreTeam/ShrihariJoshi.jpeg',
     },
     {
-        name: 'Kushal L',
-        role: 'Treasurer',
-        image: '/coreTeam/Kushal.jpg',
-    },
-    {
         name: 'Saksham Yadav',
         role: 'Secretary',
         image: '/coreTeam/Saksham.jpeg',
-    },
-    {
-        name: 'Sneha Debnath',
-        role: 'Secretary',
-        image: '/coreTeam/Sneha Debnath.jpg',
     },
     {
         name: 'Samrudh P',
