@@ -186,7 +186,44 @@ const eventData = [
       img12: '/eventsImages/codegolf2.0/codegolf13.jpg',
     }
   }
-  
+  ,
+  {
+    id: 9,
+    title: "Code2Create 2026",
+    img: "/eventsImages/code2create/code2create1.jpg",
+    description: "A collaborative activity-based development sprint focusing on 'Fork It. Finish It. Ship It.'",
+    faculty: {
+      name: "Dr. Jamuna S Murthy",
+      about: "Faculty Sponsor, ACM RIT Student Chapter"
+    },
+    details: {
+      desc: "Code2Create 2026, organized by the ACM RIT Student Chapter in collaboration with BMSCE ACM, MIT ACM, NITK ACM, and RVCE ACM, was an activity-based development sprint held on 06 May 2026 at ESB Seminar Hall I, Ramaiah Institute of Technology, Bangalore. The event transitioned participants from competitive programming toward practical system engineering through an intensive five-hour product sprint.\n\nEvent Philosophy: Fork It. Finish It. Ship It.\nThe competition followed a three-tier development model:\n- Fork It: Teams cloned scaffolded repositories containing base infrastructure and raw, unrefined datasets.\n- Finish It: Teams implemented core business logic while cleaning \"dirty\" data (handling null values, outliers, type-mismatches)—simulating real-world software maintenance challenges.\n- Ship It: Teams submitted functional end-to-end products satisfying most requirements and constraints within the competition timeline.\n\nEvent Format:\nEvaluation was based on five key judging dimensions: Problem-Solving Approach & Logic, Code Quality & Structure, Scalability & Efficiency, Handling of Edge Cases & Constraints, and Clarity in Explanation & Justification. Submissions were continuously monitored throughout the sprint, followed by final evaluation based on functionality, technical soundness, and presentation of completed products.\n\nPhases:\nPhase 1 – Problem Statement Allocation: Preference-based assignment; participants submitted preference forms and problem statements were allocated on a first-come, first-served basis.\nPhase 2 – Repository Setup & Data Engineering: Teams forked assigned repositories, set up development environments, and performed data cleaning and pre-processing on provided datasets.\nPhase 3 – Product Implementation & Deployment: Teams developed core business logic, implemented optimized solutions, integrated required functionalities, and shipped functional end-to-end products within the competition timeline.\n\n📊 Event Statistics:\n- Date: 06 May 2026\n- Venue: ESB Seminar Hall I, Ramaiah Institute of Technology\n- Time: 09:00 AM - 04:00 PM (7 hours including registration, sprint, and closing ceremony)\n- Estimated Participants: ~250 (food served for 250–270 people)\n- Team Size: 2–3 members per team\n- Collaborating Chapters: BMSCE ACM, MIT ACM, NITK ACM, RVCE ACM, RIT ACM\n- Participants from multiple departments: CSE, Artificial Intelligence, Information Science, Electronics, and allied branches\n- Funding: ACM India (Activity Based Funding)\n\n🥇 Winners:\nFirst Place (₹7,000): Team Claude Catalysts (RIT) – Manjunath Pati, Mayur P Shenoy, Naomi Pereira – Exceptional mastery in data structures and algorithms with remarkable accuracy and optimization.\nSecond Place (₹5,000): Team MergeConflicts (BMSCE) – Aditya Chitogpker, Sudhanshu Raj, Pratyush Gulvady – Strong logical reasoning and creative edge-case handling.\nThird Place (₹3,000): Team [NULL] (BMSCE) – Saketh Ram Arepalli, Rajarshi Ghosh, Chinmay Hegde – Technical precision, structured problem-solving, and efficient algorithm design with clean documentation.\n\n✨ Special Awards:\nBest Freshers Team (₹2,500): Team CompileHers (RIT) – Meghna M Nambiar, Nireeksha, Konda Prathyaksha Reddy – Impressive logical thinking and adaptability with innovative solutions and attention to edge cases.\nBest Women Team (₹2,500): Team Noldea (RIT) – Bhavana K M, Bhargavi MW – Exceptional coding efficiency and strategic approach with strong teamwork and technical accuracy.\n\n✨ Key Highlights:\n- Activity-based development sprint emphasizing \"shipping\" functional products over algorithmic puzzles.\n- Inter-chapter collaboration fostering a strong regional technical community.\n- Practical exposure to real-world data challenges and system design.\n- Focus on code quality, scalability, and professional presentation.\n- 250+ participants from diverse engineering disciplines and multiple institutions.\n- Comprehensive faculty guidance on best practices: understand before developing, clean code structure, strong fundamentals, scalability optimization, thorough testing, and effective team collaboration.\n- Meal service with traditional menu (Veg Biryani and Vegetable Raitha) for all participants and organizers.\n- Event documented by the iClick photography club of Ramaiah Institute of Technology.\n- Recognition of both technical excellence and diversity (special awards for freshers and women-led teams).\n\nFaculty Insights:\nDr. Jamuna S Murthy, Faculty Sponsor, emphasized that competitive programming success depends on strategy, teamwork, and growth mindset. She highlighted ethical practices, celebrated participation from diverse departments and institutions, and encouraged students to view failure as a learning opportunity.\n\nParticipant Feedback:\nParticipants praised the \"Fork It, Finish It, Ship It\" workflow, collaborative atmosphere between chapters, quality of problem statements, and professional hospitality. Suggestions for improvement included longer technical briefings and extended time for dashboard deployment phases. Overall, the event was highly successful, with strong positive feedback on problem difficulty, competitive environment, and supportive ACM organization.\n\nOutcome:\nCode2Create 2026 successfully demonstrated the importance of hackathons and collaborative coding platforms in encouraging practical learning, interdisciplinary interaction, technical excellence, and professional growth among students. The event reinforced the transition from competitive programming toward real-world system engineering and fostered a culture of innovation, teamwork, and community-driven learning across participating ACM chapters.",
+      img1: '/eventsImages/code2create/code2create1.jpg',
+      img2: '/eventsImages/code2create/code2create2.jpg',
+      img3: '/eventsImages/code2create/code2create3.jpg',
+      img4: '/eventsImages/code2create/code2create4.jpg',
+      img5: '/eventsImages/code2create/code2create5.jpg',
+      img6: '/eventsImages/code2create/code2create6.jpg'
+    },
+    stats: {
+      date: "06 May 2026",
+      venue: "ESB Seminar Hall I, Ramaiah Institute of Technology",
+      duration_hours: 7,
+      participants_served_food: "250-270",
+      estimated_participants: "~250",
+      team_size: "2-3",
+      number_of_winning_teams: 3,
+      total_prize_money_inr: 20000,
+      collaborating_chapters: ["BMSCE ACM","MIT ACM","NITK ACM","RVCE ACM","RIT ACM"],
+      funding: "ACM India (Activity Based Funding)",
+      key_objectives: ["Fork repositories","Clean dirty data","Implement scalable business logic","Ship end-to-end product"],
+      food_served: {
+        menu: ["Veg Biryani","Vegetable Raitha"],
+        quantity_served: "250-270"
+      }
+    }
+  }
 ];
 
 export default eventData;
+
