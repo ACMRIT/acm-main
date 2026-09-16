@@ -10,11 +10,19 @@ const Page = () => {
         <h2 className="font-semibold text-4xl sm:text-5xl hover:scale-110 font-titillium text-red-600 transition duration-300 text-center">
           Faculty Sponsor
         </h2>
-        <div className="flex justify-center w-full">
+        <div className="flex flex-wrap justify-center gap-8 w-full">
           <MemberCard
             member={{
-              name: "Jamuna S Murthy",
+              name: "Dr Soumya BJ",
               role: "Faculty Advisor",
+              image: '/coreTeam/soumya.png'
+            }}
+            isFaculty={true}
+          />
+          <MemberCard
+            member={{
+              name: "Dr Jamuna S Murthy",
+              role: "Ex-Faculty Sponsor",
               image: '/coreTeam-old/jamuna.jpg'
             }}
             isFaculty={true}
