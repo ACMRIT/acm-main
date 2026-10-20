@@ -41,7 +41,7 @@ export function EventsDisplay() {
                                 <span>Host :</span>
                             </h2>
                             <h2 className="text-xl md:text-3xl font-bold text-neutral-900 dark:text-neutral-100 capitalize">
-                                Jamuna S Murthy
+                                Prof. Jamuna S Murthy
                             </h2>
                         </div>
                     )}

@@ -21,7 +21,7 @@ const Page = () => {
           />
           <MemberCard
             member={{
-              name: "Dr Jamuna S Murthy",
+              name: "Prof. Jamuna S Murthy",
               role: "Ex-Faculty Sponsor",
               image: '/coreTeam-old/jamuna.jpg'
             }}

@@ -8,7 +8,7 @@
 
 **Organiser:** ACM RIT Student Chapter (in collaboration with BMSCE ACM, MIT ACM, NITK ACM, RVCE ACM)
 
-**Faculty Sponsor:** Dr. Jamuna S Murthy
+**Faculty Sponsor:** Prof. Jamuna S Murthy
 
 **Funding:** ACM India (Activity Based Funding)
 
@@ -61,7 +61,7 @@ Code2Create was an activity-based product sprint (09:00–16:00) focused on movi
 ---
 
 **Contact**
-ACM RIT Student Chapter — Faculty Sponsor: Dr. Jamuna S Murthy
+ACM RIT Student Chapter — Faculty Sponsor: Prof. Jamuna S Murthy
 
 
 *Prepared from the event report provided. Fields marked "Not specified" should be updated if exact numbers/names are available.*

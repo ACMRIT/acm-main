@@ -5,7 +5,7 @@ const eventData = [
     img: "/eventsImages/aiWebinar/ai1.jpg",
     description: "",
     guest: {
-      name: "Jamuna S Murthy",
+      name: "Prof. Jamuna S Murthy",
       about: ""
     },
     details: {
@@ -29,7 +29,7 @@ const eventData = [
       about: ""
     },
     faculty: {
-      name: "Jamuna S Murthy",
+      name: "Prof. Jamuna S Murthy",
       about: ""
     },
     details: {
@@ -87,7 +87,7 @@ const eventData = [
       about: ""
     },
     faculty: {
-      name: "Jamuna S Murthy",
+      name: "Prof. Jamuna S Murthy",
       about: ""
     },
     details: {
@@ -108,7 +108,7 @@ const eventData = [
       about: "Judging panel comprising industry experts who provided project feedback, evaluation, and personal insights into tech and career paths."
     },
     faculty: {
-      name: "Jamuna S Murthy",
+      name: "Prof. Jamuna S Murthy",
       about: "Assistant Professor, Department of CSE and ACM-RIT Faculty Coordinator, who opened the event with an inspiring speech and guided the organizing team throughout."
     },
     details: {
@@ -131,7 +131,7 @@ const eventData = [
     img: "/eventsImages/codeGolf/code1.jpg",
     description: "A fast-paced DSA coding contest hosted on HackerRank, emphasizing shortest code solutions and efficiency.",
     faculty: {
-      name: "Jamuna S Murthy",
+      name: "Prof. Jamuna S Murthy",
       about: "Assistant Professor, Department of CSE and Faculty Coordinator of ACM-RIT. Delivered the welcome address and played a key role in organizing the event."
     },
     details: {
@@ -167,7 +167,7 @@ const eventData = [
     img: "/eventsImages/codegolf2.0/codegolf1.jpg",
     description: "Think smarter. Code shorter. Win faster.",
     faculty: {
-      name: "Jamuna S Murthy",
+      name: "Prof. Jamuna S Murthy",
       about: "Assistant Professor, Department of CSE and Faculty Coordinator of ACM-RIT"
     },
     details: {
@@ -193,7 +193,7 @@ const eventData = [
     img: "/eventsImages/code2create/code2create1.jpg",
     description: "A collaborative activity-based development sprint focusing on 'Fork It. Finish It. Ship It.'",
     faculty: {
-      name: "Dr. Jamuna S Murthy",
+      name: "Prof. Jamuna S Murthy",
       about: "Faculty Sponsor, ACM RIT Student Chapter"
     },
     details: {
